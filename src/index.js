@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const obj = {
+    name: "Dima",
+    age: 43,
+}
+
+
+const {name, age} = obj;
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App  myName={name} myAge={age}/>
   </React.StrictMode>
 );
 
